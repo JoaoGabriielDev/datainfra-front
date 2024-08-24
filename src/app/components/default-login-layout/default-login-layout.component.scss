@@ -14,7 +14,7 @@ main{
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin-left: 200px;
+    margin-left: 135px;
 
   }
 
@@ -28,37 +28,64 @@ main{
   .form-section{
     flex-grow: 0.3;
     padding: 0 35px;
-    gap: 34px;
-
 
     h2{
       font-size: 20px;
       font-weight: bold;
-      margin: 20px;
     }
 
   }
-  button{
+
+  .btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-    background-color: transparent;
-    padding: 12px 24px;
-    margin: 20px;
+    gap: 20px;
 
-    &.btn-primary{
+    .divider{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
 
-      background-color: $primary-color;
-      color: white;
-      box-shadow: 0px 8px 12px #248dfcf6;
+      font-size: 12px;
+      color: rgb(138, 136, 136);
+      font-weight: 400;
+      text-transform: uppercase;
+
+      div{
+        flex-grow: 1;
+        height: 2px;
+        background-color: rgb(138, 136, 136);
+      }
     }
-    &.btn-secundary{
-      border: 1px solid $primary-color;
-      color: $primary-color;
+
+    button{
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      background-color: transparent;
+      padding: 12px 24px;
+      cursor: pointer;
+
+      &.btn-primary{
+
+        background-color: $primary-color;
+        color: white;
+        box-shadow: 0px 8px 12px #6aacf2f6;
+      }
+      &.btn-secundary{
+        border: 1px solid $primary-color;
+        color: $primary-color;
+      }
     }
   }
+
 }
 
 

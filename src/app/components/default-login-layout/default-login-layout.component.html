@@ -2,23 +2,24 @@
 
   <section class="forms=section">
     <img src="../../../assets/images/logoone.png">
-
-    <h2>{{ title }}</h2>
-
-    <button class="btn-primary">{{primaryBtnText}}</button>
-
-    <div>
-      <span>of</span>
+    <br>
+    <h2>{{ title }}</h2><br>
+    <ng-content></ng-content>
+    <div class="btn-wrapper">
+      <br>
+      <button class="btn-primary">{{primaryBtnText}}</button>
+      <div class="divider">
+        <span>or</span>
+      </div>
+      <button class="btn-secundary">{{secondaryBtnText}}</button>
     </div>
 
-    <button class="btn-secundary">{{secondaryBtnText}}</button>
-
   </section>
+
   <section class="main-section">
 
     <h1>Faça sua denuncia!</h1>
     <img src="../../../assets/images/logomain.jpeg"/>
 
   </section>
-
 </main>
