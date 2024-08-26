@@ -1,27 +1,19 @@
-# DatainfraFront
+DataInfra - Sistema de Denúncia sobre Infraestrutura Urbana (Em desenvolvimento)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Descrição do Projeto O DataInfra é um sistema de denúncia que permite aos cidadãos reportar problemas de infraestrutura urbana, como buracos em vias, iluminação pública defeituosa, e outros problemas que afetam a qualidade de vida nas cidades. Utilizando técnicas de análise de dados, o sistema é capaz de mapear e visualizar os problemas mais recorrentes e críticos, auxiliando as autoridades na tomada de decisões para melhorias urbanas.
 
-## Development server
+Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Backend: Java 17: Linguagem de programação principal utilizada no desenvolvimento do backend. Spring Boot: Framework utilizado para simplificar o desenvolvimento de aplicações Java. JWT (JSON Web Token): Utilizado para autenticação segura de usuários.
 
-## Code scaffolding
+Frontend: Angular 18: Framework utilizado para o desenvolvimento da interface do usuário. HTML5 & CSS3: Tecnologias para estruturação e estilização das páginas. TypeScript: Linguagem usada no desenvolvimento Angular para adicionar tipagem estática.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Funcionalidades Principais Cadastro e Login de Usuários: Com autenticação JWT, garantindo segurança nas operações. Submissão de Denúncias: Usuários podem registrar problemas de infraestrutura com descrições detalhadas e localização geográfica. Análise de Dados: Relatórios e gráficos que mostram as principais ocorrências e áreas problemáticas. Mapeamento Geográfico: Visualização das denúncias em um mapa interativo, facilitando a identificação de áreas críticas.
 
-## Build
+Como Rodar o Projeto?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Pré-requisitos: Java 17 ou superior instalado Node.js e npm instalados (para o frontend) Banco de dados configurado (MySQL, PostgreSQL, H2 e etc.)
 
-## Running unit tests
+Instruções: Clone este repositório. No diretório do backend, execute o comando mvn spring-boot:run para iniciar o servidor. No diretório do frontend, execute npm install para instalar as dependências e, em seguida, ng serve para rodar a aplicação Angular. Contribuições Sinta-se à vontade para contribuir com melhorias para este projeto. Sugestões e pull requests são muito bem-vindos!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Licença Este projeto está licenciado sob a Licença MIT.
